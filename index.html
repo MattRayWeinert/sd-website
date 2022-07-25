@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SmartHub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("camera.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3" style="width: 32.5%">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3" style="width: 32.5%">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3" style="width: 32.5%">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">SmartHub</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About the Team</span></h5>
+    <img src="Matt.jpg" style="width:100%;max-width:50%;display:flex;margin:auto;" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Matthew Weinert is currently a
+        senior at the University of
+        Central Florida and will be
+        graduating in August of 2022
+        with his degree in computer
+        engineering. While in school,
+        Matt has accumulated 2
+        full years of professional
+        Software Engineering
+        experience, across 3 different
+        companies. Currently he has a full time position as
+        a full-stack Software Engineer at 4C Strategies and his goal
+        is to be an adjunct professor or run a software startup on the
+        side in his free time post-graduation.</p>
+    </div>
+    <p><strong>Email:</strong> Matthew.Weinert@knights.ucf.edu</p>
+  </div>
+
+  <div class="w3-content" style="max-width:700px">
+    <img src="Joshua.jpg" style="width:100%;max-width:50%;display:flex;margin:auto;" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+    <p>
+        Joshua Sherrill is currently a
+        senior at the University of
+        Central Florida and will be
+        graduating in August of 2022
+        with a major in electrical
+        engineering. Joshua has a strong
+        background in sales and
+        experience with technical
+        products. Upon graduating
+        Joshua hopes to enter the
+        technical sales field where he is able to leverage his
+        outgoing personality and his technical ability to push
+        innovative products to market. Joshua has a strong
+        understanding of the market and hopes to become a sales
+        engineer after graduation.
+    </p>
+    </div>
+    <p><strong>Email:</strong> Joshua.Sherrill@knights.ucf.edu</p>
+  </div>
+
+  <div class="w3-content" style="max-width:700px">
+    <img src="Kenneth.png" style="width:100%;max-width:50%;display:flex;margin:auto;" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Kenneth Ancrum is currently a
+        senior at the University of Central
+        Florida and will be graduating in
+        August of 2022 with a major in
+        electrical engineering. And hopes
+        to go into the industry to drive
+        innovation forward. Kenneth is
+        most knowledgeable in hardware
+        and controls topic and wishes to
+        work in with hardware and design after graduation.
+        Kenneth is responsible for hardware research and overall
+        PCB design and assembly. </p>
+    </div>
+    <p><strong>Email:</strong> KennethAncrum@knights.ucf.edu</p>
+  </div>
+
+  <div class="w3-content" style="max-width:700px">
+    <img src="Korey.png" style="width:100%;max-width:50%;display:flex;margin:auto;" class="w3-margin-top">
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Korey Lombardi is currently a senior at the University of
+        Central Florida and will graduate in August of 2022 with
+        his degree in computer engineering. He is passionate about
+        building products from scratch, and Korey is most
+        comfortable in the web development ecosystem. After
+        graduation, he plans to start his
+        own freelance software company
+        specializing in restaurant
+        software.</p>
+    </div>
+    <p><strong>Email:</strong> KoreyLombardi@knights.ucf.edu</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE PROJECT</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Documents');" id="myLink">
+        <div class="w3-col s6 tablink">Documents</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Demos');">
+        <div class="w3-col s6 tablink">Demos</div>
+      </a>
+    </div>
+
+    <div id="Documents" class="w3-container menu w3-padding-48 w3-card">
+            <a class="w3-text-grey" href="Divide and Conquer.docx.pdf" target="_blank">Divide and Conquer</a><br>
+            <a class="w3-text-grey" href="" target="_blank">60 Page Paper</a><br>
+            <a class="w3-text-grey" href="SENIOR DESIGN - SMART HUB.pdf" target="_blank">120 Page Paper</a><br>
+            <a class="w3-text-grey" href="Smart Surveillance Hub.pdf" target="_blank">Final Demo Committee Paper</a><br>
+    </div>
+
+    <div id="Demos" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Final Demo</h5>
+        <video controls="controls" width="100%">
+            <source src="FINAL DEMO.mp4" type="video/mp4">
+        </video>
+
+        <h5>Final CDR</h5>
+        <video controls="controls" width="100%">
+            <source src="FINAL CDR.mp4" type="video/mp4">
+        </video>
+
+        <h5>Midterm Demo</h5>
+        <video controls="controls" width="100%">
+            <source src="Group 15 - SmartHub - Midterm demo.mp4" type="video/mp4">
+        </video>
+
+        <h5>Midterm CDR</h5>
+        <video controls="controls" width="100%">
+            <source src="MIDTERM CDR.mp4" type="video/mp4">
+        </video>
+    </div>  
+  </div>
+</div>
+
+<footer>
+    Group 15 - 2022
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
